@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Hospital Management System
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="index2.css"></link>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		
+		<style>
+		.mySlides {display:none;}
+		</style>
+	</head>
+	<body>
+			<header>
+				<h1>Super Speciality Hospital
+				<br/>
+				
+				</h1>
+
+			</header>
+			
+			<main align=center>
+			<div id="nav">
+				<a href="#"><div class="home">Home</div></a>
+				<a href="#"><div class="Appointment">Appointment</div></a>
+				<a href="#"><div class="Services">Services</div></a>
+				<a href="#"><div class="Contact">Contact Us</div></a>
+				
+				</div>
+				<article>
+					<section>
+					
+					<h2 class="w3-center">Gallary</h2>
+
+<div class="w3-content w3-display-container" >
+  <img class="mySlides" src="12.jpg" style="width:100% ">
+  <img class="mySlides" src="01.jpg" style="width:100%" >
+  <img class="mySlides" src="12.jpg" style="width:100% ">
+  <img class="mySlides" src="01.jpg" style="width:100% ">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+					
+						<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+					</section>
+				
+				</article>
+			</main>
+			
+			<aside align=center>
+				<h3>Our Specialist</h3>
+				<table align=center >
+					<tr>
+						<td>
+					<img src="01.jpg" alt="img can't load" width="100" height="100">
+					</td>
+					<td>
+					Dr. Sumedh Dhanedhar
+					<br/>(Brain Specialist)</td>
+					
+					<tr>
+					
+					
+					
+										<tr>
+						<td>
+					<img src="01.jpg" alt="img can't load" width="100" height="100">
+					</td>
+					<td>
+					Dr. Sumedh Dhanedhar
+					<br/>(Cancer Specialist)</td>
+					
+					<tr>
+					
+					
+					
+										<tr>
+						<td>
+					<img src="01.jpg" alt="img can't load" width="100" height="100">
+					</td>
+					<td>
+					Dr. Sumedh Dhanedhar
+					<br/>(MBBS)</td>
+					
+					<tr>
+					
+					
+					
+					
+				</table>
+				<br/>
+				
+				<h3> Our Services </h3>
+				
+								<a href="Appointment.html">Book Appointment</a><br/>
+								<a href="service.html">Available Services</a><br/><br/>
+
+
+				
+								
+								
+			</aside>
+			
+			<footer align=left>
+				<h4>@copyrite Sumedh Dhanedhar</h4>
+			</footer>
+			
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<h2> Book Appointment</h2>
+<form action="Appointment.html" onsubmit="return function1()" method="get">
+    Enter First Name: <input type="text" name="first name" placeholder="Enter first name" required>
+	<br/><br/>Enter Last Name: <input type="text" name="last name" placeholder="Enter last name" required>
+	<br/><br/>Select Doctor Name <select name="Doctor" required>
+
+	<option name="i1">Dr. Sumedh Dhanedhar</option>
+	<option name="i2">Dr. pankaj Pagare</option>
+	</select><br/>
+	<br/>Select Date: <input type="date" name="date" required> 
+	<br/><br/>
+	Select Time: <input type="time" name="time" required>
+	<br/>
+	<br/>
+	<input type="submit" name=submit" value="Save" >
+	</form>
